@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electrical Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #f7f7f7;
+        color: #111;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .container {
+        width: 1200px;
+        max-width: 95%;
+        margin: auto;
+      }
+
+      /* HEADER */
+
+      header {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 25px 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: 800;
+        color: #111;
+      }
+
+      .menu {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .menu a {
+        color: #111;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .menu a:hover {
+        color: #fff;
+      }
+
+      .btn {
+        background: #111;
+        color: #fff;
+        padding: 14px 30px;
+        border-radius: 50px;
+        display: inline-block;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+      }
+
+      /* HERO */
+
+      .hero {
+        background: linear-gradient(135deg, #ffcc00, #ff9f00);
+        min-height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background: #f7f7f7;
+        border-radius: 50% 50% 0 0;
+      }
+
+      .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 150px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-text {
+        width: 50%;
+      }
+
+      .hero-text span {
+        color: #ff4d00;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .hero-text h1 {
+        font-size: 65px;
+        line-height: 1.1;
+        margin: 20px 0;
+        font-weight: 800;
+      }
+
+      .hero-text p {
+        color: #333;
+        width: 80%;
+        margin-bottom: 30px;
+        line-height: 1.8;
+      }
+
+      .hero-image {
+        width: 45%;
+        text-align: right;
+      }
+
+      .hero-image img {
+        width: 100%;
+        max-width: 520px;
+      }
+
+      /* SERVICES */
+
+      .services {
+        padding: 100px 0;
+        position: relative;
+        z-index: 2;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-title h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+      }
+
+      .section-title p {
+        color: #777;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .card {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .icon {
+        width: 70px;
+        height: 70px;
+        background: #ffcc00;
+        border-radius: 50%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+        font-size: 24px;
+      }
+
+      .card p {
+        color: #666;
+        line-height: 1.8;
+        margin-bottom: 25px;
+      }
+
+      /* ABOUT */
+
+      .about {
+        padding: 50px 0 120px;
+      }
+
+      .about-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+      }
+
+      .about-text {
+        width: 50%;
+      }
+
+      .about-text h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .about-text p {
+        color: #666;
+        line-height: 1.9;
+        margin-bottom: 25px;
+      }
+
+      .about-text ul {
+        margin-bottom: 30px;
+      }
+
+      .about-text ul li {
+        margin-bottom: 12px;
+        color: #333;
+      }
+
+      .about-image {
+        width: 45%;
+        position: relative;
+      }
+
+      .circle {
+        width: 420px;
+        height: 420px;
+        background: #ffcc00;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+
+      .about-image img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* FOOTER */
+
+      footer {
+        background: #1e1e1e;
+        color: #fff;
+        padding: 30px 0;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      /* RESPONSIVE */
+
+      @media (max-width: 991px) {
+        .hero-content,
+        .about-wrapper {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-text,
+        .hero-image,
+        .about-text,
+        .about-image {
+          width: 100%;
+        }
+
+        .hero-text p {
+          width: 100%;
+        }
+
+        .hero-text h1 {
+          font-size: 48px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .circle {
+          width: 300px;
+          height: 300px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .menu {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="container navbar">
+        <div class="logo">HanTrung</div>
+
+        <div class="menu">
+          <a href="#">Trang Chủ</a>
+          <a href="#">Dịch Vụ</a>
+          <a href="#">Dự Án</a>
+          <a href="#">Liên Hệ</a>
+
+          <a href="#" class="btn"> Liên Hệ </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span>Electrical Services</span>
+
+          <h1>Thi Công Điện Lạnh Chuyên Nghiệp & Uy Tín</h1>
+
+          <p>
+            Chuyên thi công điện lạnh, hệ thống thông gió, kho lạnh và bảo trì
+            công nghiệp cho doanh nghiệp, showroom và nhà xưởng.
+          </p>
+
+          <a href="#" class="btn"> Xem Dịch Vụ </a>
+        </div>
+
+        <div class="hero-image">
+          <img src="https://i.imgur.com/UYiroys.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+
+    <section class="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Dịch Vụ Chính</h2>
+          <p>Giải pháp điện lạnh toàn diện cho doanh nghiệp</p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="icon">❄️</div>
+
+            <h3>Điện Lạnh</h3>
+
+            <p>
+              Thi công và lắp đặt hệ thống máy lạnh, điều hòa công nghiệp hiện
+              đại.
+            </p>
+
+            <a href="#" class="btn"> Xem Thêm </a>
+          </div>
+
+          <div class="card">
+            <div class="icon">⚡</div>
+
+            <h3>Hệ Thống Điện</h3>
+
+            <p>Thi công hệ thống điện cho showroom, văn phòng và nhà xưởng.</p>
+
+            <a href="#" class="btn"> Xem Thêm </a>
+          </div>
+
+          <div class="card">
+            <div class="icon">🛠️</div>
+
+            <h3>Bảo Trì</h3>
+
+            <p>
+              Bảo trì, sửa chữa và kiểm tra định kỳ hệ thống điện lạnh chuyên
+              nghiệp.
+            </p>
+
+            <a href="#" class="btn"> Xem Thêm </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+      <div class="container about-wrapper">
+        <div class="about-text">
+          <h2>Giải Pháp Điện Lạnh Hiện Đại</h2>
+
+          <p>
+            Hán Trung chuyên cung cấp giải pháp điện lạnh, thông gió và hệ thống
+            kỹ thuật cho doanh nghiệp với đội ngũ kỹ thuật nhiều kinh nghiệm.
+          </p>
+
+          <ul>
+            <li>✔ Thi công chuyên nghiệp</li>
+            <li>✔ Đội ngũ kỹ thuật tay nghề cao</li>
+            <li>✔ Bảo hành & hỗ trợ nhanh chóng</li>
+          </ul>
+
+          <a href="#" class="btn"> Liên Hệ Ngay </a>
+        </div>
+
+        <div class="about-image">
+          <div class="circle"></div>
+
+          <img src="https://i.imgur.com/UYiroys.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container footer-content">
+        <p>© 2026 Han Trung Engineering</p>
+
+        <p>Điện lạnh - Thông gió - Thi công kỹ thuật</p>
+      </div>
+    </footer>
+  </body>
+</html>
