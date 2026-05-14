@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 
   background: var(--light-gray);
 
@@ -186,17 +186,17 @@ textarea {
 }
 
 .btn-outline {
-  border: 2px solid var(--primary);
+  border: 2px solid var(--white);
 
-  color: var(--primary);
+  color: var(--white);
 
   background: transparent;
 }
 
 .btn-outline:hover {
-  background: var(--primary);
+  background: var(--white);
 
-  color: var(--white);
+  color: var(--primary);
 
   transform: translateY(-5px);
 }
@@ -243,11 +243,17 @@ textarea {
 }
 
 .logo {
-  font-size: 42px;
+  display: flex;
 
-  font-weight: 800;
+  align-items: center;
+}
 
-  color: var(--primary);
+.logo img {
+  height: 78px;
+
+  width: auto;
+
+  object-fit: contain;
 }
 
 .menu ul {
@@ -847,11 +853,31 @@ textarea {
 .footer-bottom {
   margin-top: 80px;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--gray);
 
   padding: 26px 0;
+}
 
-  text-align: center;
+.footer-bottom .container {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-credit {
+  font-size: 14px;
+
+  opacity: 0.9;
+}
+.footer-credit a {
+  transition: var(--transition);
+}
+
+.footer-credit a:hover {
+  color: var(--white);
 }
 
 /* =========================================
