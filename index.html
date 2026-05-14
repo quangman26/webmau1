@@ -1,465 +1,573 @@
 <!doctype html>
 <html lang="vi">
   <head>
+    <!-- META -->
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Electrical Services</title>
+
+    <title>Điện Lạnh Hàn Trung</title>
+
+    <meta
+      name="description"
+      content="Thi công điện lạnh, kho lạnh, thông gió và hệ thống kỹ thuật chuyên nghiệp."
+    />
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="./assets/img/favicon.png" />
+
+    <!-- GOOGLE FONT -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
+    <!-- FONT AWESOME -->
 
-      body {
-        background: #f7f7f7;
-        color: #111;
-      }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-      a {
-        text-decoration: none;
-      }
+    <!-- CSS -->
 
-      .container {
-        width: 1200px;
-        max-width: 95%;
-        margin: auto;
-      }
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-      /* HEADER */
+    <link rel="stylesheet" href="./assets/css/animation.css" />
 
-      header {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        padding: 25px 0;
-      }
-
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        font-size: 28px;
-        font-weight: 800;
-        color: #111;
-      }
-
-      .menu {
-        display: flex;
-        gap: 40px;
-        align-items: center;
-      }
-
-      .menu a {
-        color: #111;
-        font-weight: 500;
-        transition: 0.3s;
-      }
-
-      .menu a:hover {
-        color: #fff;
-      }
-
-      .btn {
-        background: #111;
-        color: #fff;
-        padding: 14px 30px;
-        border-radius: 50px;
-        display: inline-block;
-        font-weight: 600;
-        transition: 0.3s;
-      }
-
-      .btn:hover {
-        transform: translateY(-3px);
-      }
-
-      /* HERO */
-
-      .hero {
-        background: linear-gradient(135deg, #ffcc00, #ff9f00);
-        min-height: 100vh;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .hero::after {
-        content: "";
-        position: absolute;
-        bottom: -120px;
-        left: 0;
-        width: 100%;
-        height: 250px;
-        background: #f7f7f7;
-        border-radius: 50% 50% 0 0;
-      }
-
-      .hero-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 150px;
-        position: relative;
-        z-index: 2;
-      }
-
-      .hero-text {
-        width: 50%;
-      }
-
-      .hero-text span {
-        color: #ff4d00;
-        font-weight: 600;
-        font-size: 14px;
-      }
-
-      .hero-text h1 {
-        font-size: 65px;
-        line-height: 1.1;
-        margin: 20px 0;
-        font-weight: 800;
-      }
-
-      .hero-text p {
-        color: #333;
-        width: 80%;
-        margin-bottom: 30px;
-        line-height: 1.8;
-      }
-
-      .hero-image {
-        width: 45%;
-        text-align: right;
-      }
-
-      .hero-image img {
-        width: 100%;
-        max-width: 520px;
-      }
-
-      /* SERVICES */
-
-      .services {
-        padding: 100px 0;
-        position: relative;
-        z-index: 2;
-      }
-
-      .section-title {
-        text-align: center;
-        margin-bottom: 60px;
-      }
-
-      .section-title h2 {
-        font-size: 45px;
-        margin-bottom: 10px;
-      }
-
-      .section-title p {
-        color: #777;
-      }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-      }
-
-      .card {
-        background: #fff;
-        padding: 40px 30px;
-        border-radius: 25px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        transition: 0.3s;
-      }
-
-      .card:hover {
-        transform: translateY(-10px);
-      }
-
-      .icon {
-        width: 70px;
-        height: 70px;
-        background: #ffcc00;
-        border-radius: 50%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-
-      .card h3 {
-        margin-bottom: 15px;
-        font-size: 24px;
-      }
-
-      .card p {
-        color: #666;
-        line-height: 1.8;
-        margin-bottom: 25px;
-      }
-
-      /* ABOUT */
-
-      .about {
-        padding: 50px 0 120px;
-      }
-
-      .about-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 50px;
-      }
-
-      .about-text {
-        width: 50%;
-      }
-
-      .about-text h2 {
-        font-size: 50px;
-        margin-bottom: 20px;
-        line-height: 1.2;
-      }
-
-      .about-text p {
-        color: #666;
-        line-height: 1.9;
-        margin-bottom: 25px;
-      }
-
-      .about-text ul {
-        margin-bottom: 30px;
-      }
-
-      .about-text ul li {
-        margin-bottom: 12px;
-        color: #333;
-      }
-
-      .about-image {
-        width: 45%;
-        position: relative;
-      }
-
-      .circle {
-        width: 420px;
-        height: 420px;
-        background: #ffcc00;
-        border-radius: 50%;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-      }
-
-      .about-image img {
-        width: 100%;
-        position: relative;
-        z-index: 2;
-      }
-
-      /* FOOTER */
-
-      footer {
-        background: #1e1e1e;
-        color: #fff;
-        padding: 30px 0;
-      }
-
-      .footer-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      /* RESPONSIVE */
-
-      @media (max-width: 991px) {
-        .hero-content,
-        .about-wrapper {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .hero-text,
-        .hero-image,
-        .about-text,
-        .about-image {
-          width: 100%;
-        }
-
-        .hero-text p {
-          width: 100%;
-        }
-
-        .hero-text h1 {
-          font-size: 48px;
-        }
-
-        .cards {
-          grid-template-columns: 1fr;
-        }
-
-        .circle {
-          width: 300px;
-          height: 300px;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-
-        .menu {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
+
   <body>
+    <!-- ===================================== -->
     <!-- HEADER -->
+    <!-- ===================================== -->
 
-    <header>
+    <header class="header">
       <div class="container navbar">
-        <div class="logo">HanTrung</div>
+        <!-- LOGO -->
 
-        <div class="menu">
-          <a href="#">Trang Chủ</a>
-          <a href="#">Dịch Vụ</a>
-          <a href="#">Dự Án</a>
-          <a href="#">Liên Hệ</a>
+        <a href="./index.html" class="logo"> HanTrung </a>
 
-          <a href="#" class="btn"> Liên Hệ </a>
-        </div>
+        <!-- MENU -->
+
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#home"> Trang Chủ </a>
+            </li>
+
+            <li>
+              <a href="#services"> Dịch Vụ </a>
+            </li>
+
+            <li>
+              <a href="#about"> Giới Thiệu </a>
+            </li>
+
+            <li>
+              <a href="./pages/projects.html"> Công Trình </a>
+            </li>
+
+            <li>
+              <a href="./pages/blog.html"> Tin Tức </a>
+            </li>
+
+            <li>
+              <a href="./pages/recruitment.html"> Tuyển Dụng </a>
+            </li>
+
+            <li>
+              <a href="./pages/contact.html"> Liên Hệ </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- CTA -->
+
+        <a href="./pages/contact.html" class="btn btn-primary nav-btn">
+          Tư Vấn Ngay
+        </a>
+
+        <!-- MOBILE TOGGLE -->
+
+        <button class="menu-toggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </header>
 
-    <!-- HERO -->
+    <!-- MENU OVERLAY -->
 
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="hero-text">
-          <span>Electrical Services</span>
+    <div class="menu-overlay"></div>
 
-          <h1>Thi Công Điện Lạnh Chuyên Nghiệp & Uy Tín</h1>
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
 
-          <p>
-            Chuyên thi công điện lạnh, hệ thống thông gió, kho lạnh và bảo trì
-            công nghiệp cho doanh nghiệp, showroom và nhà xưởng.
-          </p>
+    <main>
+      <!-- ===================================== -->
+      <!-- HERO -->
+      <!-- ===================================== -->
 
-          <a href="#" class="btn"> Xem Dịch Vụ </a>
-        </div>
+      <section class="hero hero-home" id="home">
+        <div class="container hero-content">
+          <!-- HERO TEXT -->
 
-        <div class="hero-image">
-          <img src="./img/dsavd.png" alt="" />
-        </div>
-      </div>
-    </section>
+          <div class="hero-text reveal">
+            <span class="hero-subtitle"> HANTRUNG ENGINEERING </span>
 
-    <!-- SERVICES -->
-
-    <section class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Dịch Vụ Chính</h2>
-          <p>Giải pháp điện lạnh toàn diện cho doanh nghiệp</p>
-        </div>
-
-        <div class="cards">
-          <div class="card">
-            <div class="icon">❄️</div>
-
-            <h3>Điện Lạnh</h3>
+            <h1>Thi Công Điện Lạnh Chuyên Nghiệp & Uy Tín</h1>
 
             <p>
-              Thi công và lắp đặt hệ thống máy lạnh, điều hòa công nghiệp hiện
-              đại.
+              Chuyên thi công điện lạnh, kho lạnh, hệ thống thông gió và kỹ
+              thuật công nghiệp cho doanh nghiệp, showroom và nhà xưởng.
             </p>
 
-            <a href="#" class="btn"> Xem Thêm </a>
+            <!-- BUTTON -->
+
+            <div class="hero-buttons">
+              <a href="#services" class="btn btn-primary"> Xem Dịch Vụ </a>
+
+              <a href="./pages/contact.html" class="btn btn-outline">
+                Liên Hệ
+              </a>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="icon">⚡</div>
+          <!-- HERO IMAGE -->
 
-            <h3>Hệ Thống Điện</h3>
-
-            <p>Thi công hệ thống điện cho showroom, văn phòng và nhà xưởng.</p>
-
-            <a href="#" class="btn"> Xem Thêm </a>
-          </div>
-
-          <div class="card">
-            <div class="icon">🛠️</div>
-
-            <h3>Bảo Trì</h3>
-
-            <p>
-              Bảo trì, sửa chữa và kiểm tra định kỳ hệ thống điện lạnh chuyên
-              nghiệp.
-            </p>
-
-            <a href="#" class="btn"> Xem Thêm </a>
+          <div class="hero-image fade-right">
+            <img
+              src="./assets/img/dsavd.png"
+              alt="Thi công điện lạnh Hàn Trung"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ABOUT -->
+      <!-- ===================================== -->
+      <!-- SERVICES -->
+      <!-- ===================================== -->
 
-    <section class="about">
-      <div class="container about-wrapper">
-        <div class="about-text">
-          <h2>Giải Pháp Điện Lạnh Hiện Đại</h2>
+      <section class="services section" id="services">
+        <div class="container">
+          <!-- TITLE -->
+
+          <div class="section-title reveal">
+            <span> DỊCH VỤ </span>
+
+            <h2>Giải Pháp Điện Lạnh Toàn Diện</h2>
+
+            <p>
+              Chuyên thi công điện lạnh, hệ thống kỹ thuật, kho lạnh và thông
+              gió công nghiệp chuyên nghiệp.
+            </p>
+          </div>
+
+          <!-- GRID -->
+
+          <div class="cards">
+            <!-- CARD -->
+
+            <article class="card service-card reveal">
+              <div class="icon">
+                <i class="fa-solid fa-snowflake"></i>
+              </div>
+
+              <h3>Điện Lạnh</h3>
+
+              <p>
+                Thi công hệ thống điều hòa, VRV, VRF và điện lạnh công nghiệp.
+              </p>
+            </article>
+
+            <!-- CARD -->
+
+            <article class="card service-card reveal">
+              <div class="icon">
+                <i class="fa-solid fa-fan"></i>
+              </div>
+
+              <h3>Thông Gió</h3>
+
+              <p>Hệ thống cấp gió, hút khói và thông gió nhà xưởng hiện đại.</p>
+            </article>
+
+            <!-- CARD -->
+
+            <article class="card service-card reveal">
+              <div class="icon">
+                <i class="fa-solid fa-temperature-low"></i>
+              </div>
+
+              <h3>Kho Lạnh</h3>
+
+              <p>Thi công kho lạnh, kho bảo quản thực phẩm và công nghiệp.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- ABOUT -->
+      <!-- ===================================== -->
+
+      <section class="about section" id="about">
+        <div class="container about-wrapper">
+          <!-- IMAGE -->
+
+          <div class="about-image fade-left">
+            <div class="circle"></div>
+
+            <img
+              src="./assets/img/dsavd.png"
+              alt="Đội ngũ kỹ thuật Hàn Trung"
+            />
+          </div>
+
+          <!-- TEXT -->
+
+          <div class="about-text reveal">
+            <span> GIỚI THIỆU </span>
+
+            <h2>Giải Pháp Điện Lạnh Hiện Đại & Bền Vững</h2>
+
+            <p>
+              Hàn Trung chuyên cung cấp giải pháp điện lạnh, hệ thống thông gió
+              và kỹ thuật công nghiệp hiện đại cho doanh nghiệp.
+            </p>
+
+            <ul>
+              <li>
+                <i class="fa-solid fa-check"></i>
+
+                Thi công chuyên nghiệp
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+
+                Đội ngũ kỹ thuật tay nghề cao
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check"></i>
+
+                Bảo hành & hỗ trợ nhanh chóng
+              </li>
+            </ul>
+
+            <a href="./pages/about.html" class="btn btn-primary"> Xem Thêm </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- PROJECTS -->
+      <!-- ===================================== -->
+
+      <section class="projects section">
+        <div class="container">
+          <!-- TITLE -->
+
+          <div class="section-title reveal">
+            <span> CÔNG TRÌNH </span>
+
+            <h2>Công Trình Tiêu Biểu</h2>
+
+            <p>
+              Một số công trình và dự án tiêu biểu mà Hàn Trung đã thực hiện.
+            </p>
+          </div>
+
+          <!-- GRID -->
+
+          <div class="cards">
+            <!-- ITEM -->
+
+            <article class="card project-card reveal">
+              <img
+                src="./assets/img/dsavd.png"
+                alt="Thi công showroom nội thất"
+              />
+
+              <h3>Showroom Nội Thất</h3>
+
+              <p>
+                Thi công điện lạnh và hệ thống thông gió cho showroom cao cấp.
+              </p>
+            </article>
+
+            <!-- ITEM -->
+
+            <article class="card project-card reveal">
+              <img
+                src="./assets/img/dsavd.png"
+                alt="Thi công kho lạnh công nghiệp"
+              />
+
+              <h3>Kho Lạnh Công Nghiệp</h3>
+
+              <p>Hệ thống kho lạnh bảo quản công nghiệp hiện đại.</p>
+            </article>
+
+            <!-- ITEM -->
+
+            <article class="card project-card reveal">
+              <img
+                src="./assets/img/dsavd.png"
+                alt="Thi công điện lạnh nhà xưởng"
+              />
+
+              <h3>Nhà Xưởng</h3>
+
+              <p>Thi công hệ thống điện lạnh và kỹ thuật tổng thể.</p>
+            </article>
+          </div>
+
+          <!-- BUTTON -->
+
+          <div class="section-button">
+            <a href="./pages/projects.html" class="btn btn-outline">
+              Xem Tất Cả
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- CTA -->
+      <!-- ===================================== -->
+
+      <section class="cta section">
+        <div class="container">
+          <div class="cta-box reveal">
+            <span> TƯ VẤN & BÁO GIÁ </span>
+
+            <h2>Cần Giải Pháp Thi Công?</h2>
+
+            <p>
+              Liên hệ ngay để được đội ngũ kỹ thuật Hàn Trung hỗ trợ và tư vấn
+              nhanh chóng.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="./pages/contact.html" class="btn btn-primary">
+                Liên Hệ Ngay
+              </a>
+
+              <a href="tel:0900000000" class="btn btn-outline"> Hotline </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- CLIENTS -->
+      <!-- ===================================== -->
+
+      <section class="clients section">
+        <div class="container">
+          <!-- TITLE -->
+
+          <div class="section-title reveal">
+            <span> KHÁCH HÀNG </span>
+
+            <h2>Khách Hàng Của Hàn Trung</h2>
+
+            <p>Đồng hành cùng nhiều doanh nghiệp, showroom và nhà xưởng.</p>
+          </div>
+
+          <!-- GRID -->
+
+          <div class="cards">
+            <article class="card client-card reveal">
+              <h3>VINAMILK</h3>
+            </article>
+
+            <article class="card client-card reveal">
+              <h3>SHOWROOM ABC</h3>
+            </article>
+
+            <article class="card client-card reveal">
+              <h3>FACTORY XYZ</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- NEWS -->
+      <!-- ===================================== -->
+
+      <section class="news section" id="news">
+        <div class="container">
+          <!-- TITLE -->
+
+          <div class="section-title reveal">
+            <span> TIN TỨC </span>
+
+            <h2>Kiến Thức & Tin Tức</h2>
+
+            <p>
+              Cập nhật kiến thức điện lạnh, hệ thống kỹ thuật và công nghệ mới.
+            </p>
+          </div>
+
+          <!-- GRID -->
+
+          <div class="cards">
+            <!-- CARD -->
+
+            <article class="card news-card reveal">
+              <img src="./assets/img/dsavd.png" alt="Hệ thống VRV là gì" />
+
+              <h3>Hệ Thống VRV Là Gì?</h3>
+
+              <p>Tìm hiểu hệ thống điện lạnh VRV hiện đại cho doanh nghiệp.</p>
+            </article>
+
+            <!-- CARD -->
+
+            <article class="card news-card reveal">
+              <img src="./assets/img/dsavd.png" alt="Giải pháp kho lạnh" />
+
+              <h3>Giải Pháp Kho Lạnh</h3>
+
+              <p>Những lưu ý quan trọng khi thi công kho lạnh.</p>
+            </article>
+
+            <!-- CARD -->
+
+            <article class="card news-card reveal">
+              <img src="./assets/img/dsavd.png" alt="Bảo trì điện lạnh" />
+
+              <h3>Bảo Trì Điện Lạnh</h3>
+
+              <p>Vì sao doanh nghiệp nên bảo trì hệ thống định kỳ?</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h3>HanTrung Engineering</h3>
 
           <p>
-            Hán Trung chuyên cung cấp giải pháp điện lạnh, thông gió và hệ thống
-            kỹ thuật cho doanh nghiệp với đội ngũ kỹ thuật nhiều kinh nghiệm.
+            Chuyên thi công điện lạnh, kho lạnh, hệ thống thông gió và kỹ thuật
+            công nghiệp chuyên nghiệp.
           </p>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h4>Liên Kết Nhanh</h4>
 
           <ul>
-            <li>✔ Thi công chuyên nghiệp</li>
-            <li>✔ Đội ngũ kỹ thuật tay nghề cao</li>
-            <li>✔ Bảo hành & hỗ trợ nhanh chóng</li>
-          </ul>
+            <li>
+              <a href="./index.html"> Trang Chủ </a>
+            </li>
 
-          <a href="#" class="btn"> Liên Hệ Ngay </a>
+            <li>
+              <a href="./pages/about.html"> Giới Thiệu </a>
+            </li>
+
+            <li>
+              <a href="./pages/services.html"> Dịch Vụ </a>
+            </li>
+
+            <li>
+              <a href="./pages/projects.html"> Công Trình </a>
+            </li>
+          </ul>
         </div>
 
-        <div class="about-image">
-          <div class="circle"></div>
+        <!-- COL -->
 
-          <img src="./img/dsavd.png" alt="" />
+        <div class="footer-col">
+          <h4>Dịch Vụ</h4>
+
+          <ul>
+            <li>Điện lạnh</li>
+
+            <li>Kho lạnh</li>
+
+            <li>Thông gió</li>
+
+            <li>Bảo trì hệ thống</li>
+          </ul>
+        </div>
+
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+
+          <ul>
+            <li>Hotline: 0900 000 000</li>
+
+            <li>Email: hantrung@gmail.com</li>
+
+            <li>Đồng Nai, Việt Nam</li>
+
+            <li>T2 - T7: 07:00 - 17:00</li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- FOOTER -->
+      <!-- COPYRIGHT -->
 
-    <footer>
-      <div class="container footer-content">
-        <p>© 2026 Han Trung Engineering</p>
-
-        <p>Điện lạnh - Thông gió - Thi công kỹ thuật</p>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 HanTrung Engineering. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
+
+    <!-- ===================================== -->
+    <!-- JS -->
+    <!-- ===================================== -->
+
+    <script src="./assets/js/menu.js"></script>
+
+    <script src="./assets/js/animation.js"></script>
+
+    <script src="./assets/js/scroll.js"></script>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
