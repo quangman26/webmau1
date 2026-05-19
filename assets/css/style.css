@@ -94,11 +94,9 @@ textarea {
 ========================================= */
 
 .container {
-  width: var(--container);
-
-  max-width: 92%;
-
-  margin: auto;
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .section {
@@ -286,30 +284,15 @@ textarea {
 }
 
 .menu-toggle {
-  width: 58px;
-  height: 58px;
-
-  border-radius: 50%;
-
-  border: none;
-
-  background: var(--white);
-
-  box-shadow: var(--shadow);
-
   display: none;
-
   align-items: center;
-
   justify-content: center;
-
-  cursor: pointer;
-
+  width: 46px;
+  height: 46px;
+  border: none;
+  background: transparent;
   font-size: 22px;
-
-  color: var(--primary);
-
-  transition: var(--transition);
+  cursor: pointer;
 }
 
 .menu-toggle:hover {
@@ -502,9 +485,7 @@ textarea {
 
 .cards {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
-
   gap: 30px;
 }
 .client-center {
