@@ -7,12 +7,23 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Dịch Vụ | Điện Lạnh Hàn Trung</title>
+    <title>Dịch Vụ Hán Trung | HVAC - Điện Lạnh - Kho Lạnh</title>
 
     <meta
       name="description"
-      content="Dịch vụ thi công điện lạnh, kho lạnh, thông gió và hệ thống kỹ thuật."
+      content="Hán Trung chuyên thi công hệ thống HVAC, điện lạnh công nghiệp, kho lạnh, điều hòa không khí và bảo trì hệ thống chuyên nghiệp."
     />
+
+    <meta
+      name="keywords"
+      content="dịch vụ HVAC, điện lạnh công nghiệp, kho lạnh, điều hòa công nghiệp, bảo trì HVAC, Hán Trung Engineering"
+    />
+
+    <meta name="author" content="HanTrung Engineering" />
+
+    <!-- FAVICON -->
+
+    <link rel="icon" href="../assets/img/favicon.png" />
 
     <!-- GOOGLE FONT -->
 
@@ -21,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -42,340 +53,597 @@
   </head>
 
   <body>
-    <!-- ========================= -->
+    <!-- ===================================== -->
     <!-- HEADER -->
-    <!-- ========================= -->
+    <!-- ===================================== -->
 
     <header class="header">
       <div class="container navbar">
         <!-- LOGO -->
 
-        <a href="../index.html" class="logo"> HanTrung </a>
+        <a href="../index.html" class="logo">
+          <img
+            src="../assets/img/logo-han-trung-kho-lanh.png"
+            alt="Logo Hán Trung"
+          />
+        </a>
 
         <!-- MENU -->
 
         <nav class="menu">
-          <a href="../index.html"> Trang Chủ </a>
+          <ul>
+            <li>
+              <a href="../index.html">Trang Chủ</a>
+            </li>
 
-          <a href="./services.html" class="active"> Dịch Vụ </a>
+            <li>
+              <a href="./about.html">Giới Thiệu</a>
+            </li>
 
-          <a href="./about.html"> Giới Thiệu </a>
+            <li>
+              <a href="./services.html" class="active">Dịch Vụ</a>
+            </li>
 
-          <a href="./contact.html"> Liên Hệ </a>
+            <li>
+              <a href="./projects.html">Công Trình</a>
+            </li>
 
-          <a href="./contact.html" class="btn btn-primary"> Liên Hệ Ngay </a>
+            <li>
+              <a href="./products.html">Thiết Bị</a>
+            </li>
+
+            <li>
+              <a href="./blog.html">Tin Tức</a>
+            </li>
+
+            <li>
+              <a href="./contact.html">Liên Hệ</a>
+            </li>
+          </ul>
         </nav>
 
-        <!-- MENU TOGGLE -->
+        <!-- CTA -->
 
-        <button class="menu-toggle" aria-label="Mở menu">
+        <a href="./contact.html" class="btn btn-primary nav-btn">
+          Tư Vấn Ngay
+        </a>
+
+        <!-- MOBILE TOGGLE -->
+
+        <button class="menu-toggle" aria-label="Open Menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
 
-    <!-- ========================= -->
     <!-- MENU OVERLAY -->
-    <!-- ========================= -->
 
     <div class="menu-overlay"></div>
 
-    <!-- ========================= -->
-    <!-- HERO -->
-    <!-- ========================= -->
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
 
-    <section class="hero">
-      <div class="container hero-content">
-        <!-- TEXT -->
+    <main>
+      <!-- ===================================== -->
+      <!-- SERVICES HERO -->
+      <!-- ===================================== -->
 
-        <div class="hero-text reveal">
-          <span class="hero-subtitle"> DỊCH VỤ </span>
+      <section class="services-hero">
+        <div class="container services-hero-wrapper">
+          <div class="services-hero-content reveal">
+            <span class="section-badge"> HANTRUNG HVAC ENGINEERING </span>
 
-          <h1>Giải Pháp Điện Lạnh Toàn Diện</h1>
+            <h1>
+              Giải Pháp Điện Lạnh
+              <br />
+              HVAC & Kho Lạnh
+              <br />
+              Chuyên Nghiệp
+            </h1>
 
-          <p>
-            Hàn Trung cung cấp các giải pháp điện lạnh, thông gió và hệ thống kỹ
-            thuật hiện đại dành cho doanh nghiệp, showroom và nhà xưởng.
-          </p>
+            <p>
+              Hán Trung cung cấp giải pháp điện lạnh công nghiệp, HVAC, kho lạnh
+              và hệ thống tiết kiệm năng lượng hiện đại cho doanh nghiệp và công
+              trình tại Việt Nam.
+            </p>
 
-          <div class="hero-buttons">
-            <a href="./contact.html" class="btn btn-primary"> Tư Vấn Ngay </a>
+            <div class="hero-buttons">
+              <a href="./contact.html" class="btn btn-primary"> Tư Vấn Ngay </a>
+
+              <a href="./projects.html" class="btn btn-outline">
+                Xem Công Trình
+              </a>
+            </div>
+          </div>
+
+          <div class="services-hero-image fade-right">
+            <img src="../assets/img/service-hero.jpg" alt="HVAC Hán Trung" />
           </div>
         </div>
+      </section>
 
-        <!-- IMAGE -->
+      <!-- ===================================== -->
+      <!-- SERVICES GRID -->
+      <!-- ===================================== -->
 
-        <div class="hero-image fade-right">
-          <img src="../assets/img/dsavd.png" alt="Dịch vụ điện lạnh" />
-        </div>
-      </div>
-    </section>
+      <section class="services-grid-section section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>DỊCH VỤ CHÍNH</span>
 
-    <!-- ========================= -->
-    <!-- SERVICES -->
-    <!-- ========================= -->
+            <h2>Giải Pháp Toàn Diện</h2>
+          </div>
 
-    <section class="section">
-      <div class="container">
-        <!-- TITLE -->
-
-        <div class="section-title reveal">
-          <span>DỊCH VỤ CHÍNH</span>
-
-          <h2>Các Lĩnh Vực Thi Công</h2>
-
-          <p>
-            Chuyên thi công điện lạnh, hệ thống kỹ thuật và bảo trì công nghiệp.
-          </p>
-        </div>
-
-        <!-- CARDS -->
-
-        <div class="cards">
-          <!-- CARD -->
-
-          <div class="card reveal">
-            <div class="icon">
+          <div class="services-grid">
+            <div class="service-box reveal">
               <i class="fa-solid fa-snowflake"></i>
+
+              <h3>Điện Lạnh Công Nghiệp</h3>
+
+              <p>
+                Thi công hệ thống lạnh dân dụng và công nghiệp đạt tiêu chuẩn kỹ
+                thuật.
+              </p>
             </div>
 
-            <h3>Điện Lạnh</h3>
-
-            <p>
-              Thi công hệ thống máy lạnh, điều hòa công nghiệp, VRV, VRF chuyên
-              nghiệp.
-            </p>
-          </div>
-
-          <!-- CARD -->
-
-          <div class="card reveal">
-            <div class="icon">
+            <div class="service-box reveal">
               <i class="fa-solid fa-fan"></i>
+
+              <h3>Hệ Thống HVAC</h3>
+
+              <p>
+                Thiết kế và lắp đặt hệ thống HVAC hiện đại cho nhà xưởng và tòa
+                nhà.
+              </p>
             </div>
 
-            <h3>Thông Gió</h3>
-
-            <p>
-              Thi công hệ thống thông gió, hút khói và cấp gió cho nhà xưởng và
-              showroom.
-            </p>
-          </div>
-
-          <!-- CARD -->
-
-          <div class="card reveal">
-            <div class="icon">
+            <div class="service-box reveal">
               <i class="fa-solid fa-temperature-low"></i>
+
+              <h3>Kho Lạnh</h3>
+
+              <p>
+                Thi công kho lạnh, kho cấp đông và hệ thống bảo quản công
+                nghiệp.
+              </p>
             </div>
 
-            <h3>Kho Lạnh</h3>
-
-            <p>
-              Thiết kế và thi công kho lạnh, kho bảo quản chuyên nghiệp cho
-              doanh nghiệp.
-            </p>
-          </div>
-
-          <!-- CARD -->
-
-          <div class="card reveal">
-            <div class="icon">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-
-            <h3>Hệ Thống Điện</h3>
-
-            <p>
-              Thi công hệ thống điện công nghiệp và dân dụng an toàn, tối ưu.
-            </p>
-          </div>
-
-          <!-- CARD -->
-
-          <div class="card reveal">
-            <div class="icon">
+            <div class="service-box reveal">
               <i class="fa-solid fa-screwdriver-wrench"></i>
+
+              <h3>Bảo Trì Hệ Thống</h3>
+
+              <p>Bảo trì định kỳ và hỗ trợ kỹ thuật chuyên nghiệp 24/7.</p>
             </div>
 
-            <h3>Bảo Trì</h3>
+            <div class="service-box reveal">
+              <i class="fa-solid fa-bolt"></i>
 
-            <p>
-              Kiểm tra, bảo trì định kỳ, sửa chữa hệ thống điện lạnh nhanh
-              chóng.
-            </p>
+              <h3>Tiết Kiệm Năng Lượng</h3>
+
+              <p>Tối ưu điện năng và chi phí vận hành cho doanh nghiệp.</p>
+            </div>
+
+            <div class="service-box reveal">
+              <i class="fa-solid fa-microchip"></i>
+
+              <h3>Smart HVAC</h3>
+
+              <p>Giải pháp tự động hóa và giám sát hệ thống HVAC thông minh.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- PROCESS -->
+      <!-- ===================================== -->
+
+      <section class="process-section section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>QUY TRÌNH LÀM VIỆC</span>
+
+            <h2>6 Bước Triển Khai</h2>
           </div>
 
-          <!-- CARD -->
+          <div class="process-grid">
+            <div class="process-card reveal">
+              <span>01</span>
+              <h3>Tiếp Nhận</h3>
+            </div>
 
-          <div class="card reveal">
-            <div class="icon">
+            <div class="process-card reveal">
+              <span>02</span>
+              <h3>Khảo Sát</h3>
+            </div>
+
+            <div class="process-card reveal">
+              <span>03</span>
+              <h3>Thiết Kế</h3>
+            </div>
+
+            <div class="process-card reveal">
+              <span>04</span>
+              <h3>Báo Giá</h3>
+            </div>
+
+            <div class="process-card reveal">
+              <span>05</span>
+              <h3>Thi Công</h3>
+            </div>
+
+            <div class="process-card reveal">
+              <span>06</span>
+              <h3>Bảo Trì</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- WHY CHOOSE -->
+      <!-- ===================================== -->
+
+      <section class="why-service section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>LỢI THẾ HÁN TRUNG</span>
+
+            <h2>Vì Sao Chọn Chúng Tôi</h2>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-card reveal">
+              <h3>24/7</h3>
+              <p>Hỗ trợ kỹ thuật nhanh chóng</p>
+            </div>
+
+            <div class="why-card reveal">
+              <h3>HVAC</h3>
+              <p>Công nghệ hiện đại</p>
+            </div>
+
+            <div class="why-card reveal">
+              <h3>Smart</h3>
+              <p>Tối ưu điện năng</p>
+            </div>
+
+            <div class="why-card reveal">
+              <h3>100%</h3>
+              <p>Đúng tiêu chuẩn kỹ thuật</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- INDUSTRIES -->
+      <!-- ===================================== -->
+
+      <section class="industries-section section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>LĨNH VỰC PHỤC VỤ</span>
+
+            <h2>Ngành Nghề Ứng Dụng</h2>
+          </div>
+
+          <div class="industries-grid">
+            <div class="industry-card reveal">
+              <i class="fa-solid fa-industry"></i>
+              <h3>Nhà Máy</h3>
+            </div>
+
+            <div class="industry-card reveal">
               <i class="fa-solid fa-warehouse"></i>
+              <h3>Kho Lạnh</h3>
             </div>
 
-            <h3>Nhà Xưởng</h3>
+            <div class="industry-card reveal">
+              <i class="fa-solid fa-hotel"></i>
+              <h3>Khách Sạn</h3>
+            </div>
+
+            <div class="industry-card reveal">
+              <i class="fa-solid fa-building"></i>
+              <h3>Tòa Nhà</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- TECHNOLOGY -->
+      <!-- ===================================== -->
+
+      <section class="technology-section section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>CÔNG NGHỆ</span>
+
+            <h2>Thiết Bị & Giải Pháp</h2>
+          </div>
+
+          <div class="technology-grid">
+            <div class="tech-item reveal">VRV / VRF</div>
+            <div class="tech-item reveal">Chiller</div>
+            <div class="tech-item reveal">AHU / FCU</div>
+            <div class="tech-item reveal">BMS Control</div>
+            <div class="tech-item reveal">IoT HVAC</div>
+            <div class="tech-item reveal">Smart Monitoring</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================== -->
+      <!-- MAINTENANCE -->
+      <!-- ===================================== -->
+
+      <section class="maintenance-section section">
+        <div class="container maintenance-wrapper">
+          <div class="maintenance-content reveal">
+            <span>HẬU MÃI & BẢO TRÌ</span>
+
+            <h2>
+              Hỗ Trợ Kỹ Thuật
+              <br />
+              Chuyên Nghiệp 24/7
+            </h2>
 
             <p>
-              Giải pháp kỹ thuật tổng thể dành cho nhà xưởng, khu công nghiệp.
+              Đội ngũ kỹ thuật luôn sẵn sàng hỗ trợ, kiểm tra và bảo trì hệ
+              thống HVAC nhanh chóng và hiệu quả.
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ========================= -->
-    <!-- PROCESS -->
-    <!-- ========================= -->
+      <!-- ===================================== -->
+      <!-- PROJECTS -->
+      <!-- ===================================== -->
 
-    <section class="section">
-      <div class="container">
-        <!-- TITLE -->
+      <section class="featured-projects section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>CÔNG TRÌNH TIÊU BIỂU</span>
 
-        <div class="section-title reveal">
-          <span>QUY TRÌNH</span>
-
-          <h2>Quy Trình Làm Việc</h2>
-
-          <p>Quy trình thi công chuyên nghiệp, rõ ràng và tối ưu tiến độ.</p>
-        </div>
-
-        <!-- PROCESS CARDS -->
-
-        <div class="cards">
-          <!-- ITEM -->
-
-          <div class="card reveal">
-            <div class="icon">1</div>
-
-            <h3>Khảo Sát</h3>
-
-            <p>Tiếp nhận yêu cầu và khảo sát thực tế công trình.</p>
+            <h2>Dự Án Đã Triển Khai</h2>
           </div>
 
-          <!-- ITEM -->
+          <div class="project-grid">
+            <div class="project-card reveal">
+              <img src="../assets/img/project-1.jpg" alt="" />
+              <h3>Hệ Thống HVAC Nhà Xưởng</h3>
+            </div>
 
-          <div class="card reveal">
-            <div class="icon">2</div>
+            <div class="project-card reveal">
+              <img src="../assets/img/project-2.jpg" alt="" />
+              <h3>Kho Lạnh Công Nghiệp</h3>
+            </div>
 
-            <h3>Tư Vấn</h3>
-
-            <p>Đề xuất giải pháp kỹ thuật phù hợp và tối ưu chi phí.</p>
-          </div>
-
-          <!-- ITEM -->
-
-          <div class="card reveal">
-            <div class="icon">3</div>
-
-            <h3>Thi Công</h3>
-
-            <p>Tiến hành thi công nhanh chóng, đúng tiến độ và an toàn.</p>
+            <div class="project-card reveal">
+              <img src="../assets/img/project-3.jpg" alt="" />
+              <h3>Smart HVAC Building</h3>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ========================= -->
-    <!-- WHY CHOOSE US -->
-    <!-- ========================= -->
+      <!-- ===================================== -->
+      <!-- FAQ -->
+      <!-- ===================================== -->
 
-    <section class="about section">
-      <div class="container about-wrapper">
-        <!-- IMAGE -->
+      <section class="faq-section section">
+        <div class="container">
+          <div class="section-title reveal">
+            <span>FAQ</span>
 
-        <div class="about-image fade-left">
-          <div class="circle"></div>
+            <h2>Câu Hỏi Thường Gặp</h2>
+          </div>
 
-          <img src="../assets/img/dsavd.png" alt="Đội ngũ kỹ thuật" />
+          <div class="faq-grid">
+            <div class="faq-item reveal">
+              <h3>HVAC là gì?</h3>
+              <p>
+                HVAC là hệ thống điều hòa, thông gió và kiểm soát không khí hiện
+                đại.
+              </p>
+            </div>
+
+            <div class="faq-item reveal">
+              <h3>Có hỗ trợ 24/7 không?</h3>
+              <p>Hán Trung hỗ trợ kỹ thuật và bảo trì hệ thống liên tục.</p>
+            </div>
+
+            <div class="faq-item reveal">
+              <h3>Có thi công ngoài TP.HCM?</h3>
+              <p>Chúng tôi nhận triển khai công trình trên toàn quốc.</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- TEXT -->
+      <!-- ===================================== -->
+      <!-- CTA -->
+      <!-- ===================================== -->
 
-        <div class="about-text reveal">
-          <span>TẠI SAO CHỌN CHÚNG TÔI</span>
+      <section class="services-cta">
+        <div class="container">
+          <div class="services-cta-box reveal">
+            <span>LIÊN HỆ NGAY</span>
 
-          <h2>Chất Lượng Tạo Nên Uy Tín</h2>
+            <h2>
+              Giải Pháp HVAC
+              <br />
+              Cho Doanh Nghiệp
+            </h2>
+
+            <p>
+              Hán Trung sẵn sàng tư vấn và triển khai giải pháp điện lạnh tối
+              ưu.
+            </p>
+
+            <a href="./contact.html" class="btn btn-primary">
+              Tư Vấn Miễn Phí
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <!-- COL -->
+
+        <div class="footer-col footer-company">
+          <img
+            src="../assets/img/logo-han-trung-kho-lanh.png"
+            alt="Logo Hán Trung"
+            class="footer-logo"
+          />
+
+          <br />
+
+          <h3>
+            CÔNG TY TNHH KỸ THUẬT CÔNG NGHỆ
+            <br />
+            ĐIỆN LẠNH HÁN TRUNG
+          </h3>
 
           <p>
-            Hàn Trung luôn chú trọng chất lượng thi công, độ bền công trình và
-            sự hài lòng của khách hàng.
+            Chuyên thi công điện lạnh công nghiệp, HVAC, kho lạnh, điều hòa
+            không khí và giải pháp tiết kiệm năng lượng cho doanh nghiệp và công
+            trình hiện đại.
           </p>
+
+          <!-- SOCIAL -->
+
+          <div class="footer-social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h4>Liên Kết Nhanh</h4>
 
           <ul>
             <li>
-              <i class="fa-solid fa-check"></i>
-              Thi công đúng tiến độ
+              <a href="../index.html">Trang Chủ</a>
             </li>
 
             <li>
-              <i class="fa-solid fa-check"></i>
-              Đội ngũ kỹ thuật chuyên môn cao
+              <a href="./about.html">Giới Thiệu</a>
             </li>
 
             <li>
-              <i class="fa-solid fa-check"></i>
-              Hỗ trợ và bảo hành tận nơi
+              <a href="./services.html">Dịch Vụ</a>
+            </li>
+
+            <li>
+              <a href="./projects.html">Công Trình</a>
+            </li>
+
+            <li>
+              <a href="./products.html">Thiết Bị</a>
+            </li>
+
+            <li>
+              <a href="./blog.html">Tin Tức</a>
+            </li>
+
+            <li>
+              <a href="./contact.html">Liên Hệ</a>
             </li>
           </ul>
+        </div>
 
-          <a href="./contact.html" class="btn btn-primary"> Liên Hệ Tư Vấn </a>
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h4>Lĩnh Vực Hoạt Động</h4>
+
+          <ul>
+            <li>Điện lạnh công nghiệp</li>
+
+            <li>Hệ thống HVAC</li>
+
+            <li>Kho lạnh – kho cấp đông</li>
+
+            <li>Điều hòa không khí</li>
+
+            <li>Bảo trì & bảo dưỡng hệ thống</li>
+          </ul>
+        </div>
+
+        <!-- COL -->
+
+        <div class="footer-col">
+          <h4>Thông Tin Liên Hệ</h4>
+
+          <ul>
+            <li>
+              Hotline:
+              <a href="tel:0354444188">0354 444 188</a>
+            </li>
+
+            <li>
+              Điện thoại:
+              <a href="tel:02866536680">0286 653 6680</a>
+            </li>
+
+            <li>
+              Email:
+              <a href="mailto:hanzhong888vn@gmail.com">
+                hanzhong888vn@gmail.com
+              </a>
+            </li>
+
+            <li>
+              Ô19 LKF, Đường N3, Khu Nhà Ở An Phú 1, Phường An Phú, TP. Hồ Chí
+              Minh
+            </li>
+
+            <li>
+              Hoạt động:
+              <br />
+              Thứ 2 - Thứ 7 | 07:00 - 17:00
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
 
-    <!-- ========================= -->
-    <!-- CTA -->
-    <!-- ========================= -->
+      <!-- COPYRIGHT -->
 
-    <section class="contact section">
-      <div class="container">
-        <div class="contact-box reveal">
-          <div class="section-title">
-            <span>LIÊN HỆ</span>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 HanTrung Engineering. All Rights Reserved.</p>
 
-            <h2>Bạn Cần Thi Công?</h2>
-
-            <p>Liên hệ ngay để được tư vấn giải pháp điện lạnh phù hợp nhất.</p>
-          </div>
-
-          <div style="display: flex; justify-content: center">
-            <a href="./contact.html" class="btn btn-primary"> Liên Hệ Ngay </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
-
-    <footer class="footer">
-      <div class="container footer-content">
-        <div>
-          <h3>HanTrung Engineering</h3>
-
-          <p>Điện lạnh - Thông gió - Thi công kỹ thuật</p>
-        </div>
-
-        <div class="footer-social">
-          <a href="#">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-
-          <a href="#">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-
-          <a href="#">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
+          <span class="footer-credit">
+            Designed By <a href="#">QuangMan</a>
+          </span>
         </div>
       </div>
     </footer>
 
-    <!-- ========================= -->
     <!-- JS -->
-    <!-- ========================= -->
 
     <script src="../assets/js/menu.js"></script>
 
