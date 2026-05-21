@@ -55,4 +55,8 @@
   /* TRANSITION */
 
   --transition: all 0.3s ease;
+
+  --z-preloader: 9999;
+  --z-fixed: 1000;
+  --z-dropdown: 100;
 }

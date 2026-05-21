@@ -3,13 +3,16 @@
   align-items: center;
   justify-content: center;
 
-  padding: 14px 28px;
+  height: 52px;
 
-  border-radius: var(--radius-md);
+  padding: 0 32px;
 
-  transition: var(--transition);
+  border-radius: 14px;
 
+  font-size: 15px;
   font-weight: 600;
+
+  transition: 0.3s ease;
 }
 
 .btn-primary {
@@ -18,10 +21,9 @@
 }
 
 .btn-primary:hover {
-  background: var(--primary-dark);
-}
+  transform: translateY(-2px);
 
-.btn-outline {
-  border: 1px solid var(--white);
-  color: var(--white);
+  background: var(--primary-dark);
+
+  box-shadow: 0 10px 25px rgba(43, 99, 217, 0.2);
 }

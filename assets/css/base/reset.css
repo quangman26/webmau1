@@ -36,3 +36,7 @@ textarea {
   outline: none;
   font-family: inherit;
 }
+
+button {
+  cursor: pointer;
+}
