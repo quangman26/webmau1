@@ -1,0 +1,45 @@
+.feature-strip {
+  position: relative;
+  z-index: 10;
+  margin-top: -40px;
+}
+
+.feature-strip-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  padding: 28px 32px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.08);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.feature-item span {
+  font-size: 24px;
+}
+
+.feature-item p {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+
+  line-height: 1.4;
+}

@@ -39,7 +39,16 @@ body {
 }
 
 .section-title h2 {
+  max-width: 700px;
+
+  margin-inline: auto;
   margin-bottom: 16px;
+}
+
+.section-title p {
+  max-width: 700px;
+
+  margin-inline: auto;
 }
 
 .section-sm {
@@ -53,4 +62,7 @@ body {
 .section-dark {
   background: var(--dark);
   color: var(--white);
+}
+main {
+  padding-top: 70px;
 }
