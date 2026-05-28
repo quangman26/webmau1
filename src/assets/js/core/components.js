@@ -4,16 +4,24 @@ import { initMenu } from "./menu.js";
 /**
  * LOAD COMPONENT
  */
+const componentCache = new Map();
 
 async function loadComponent(id, file) {
   try {
-    const response = await fetch(file);
+    let html;
 
-    if (!response.ok) {
-      throw new Error(`Cannot load ${file}`);
+    if (componentCache.has(file)) {
+      html = componentCache.get(file);
+    } else {
+      const response = await fetch(file);
+
+      if (!response.ok) {
+        throw new Error(`Cannot load ${file}`);
+      }
+
+      html = await response.text();
+      componentCache.set(file, html);
     }
-
-    const html = await response.text();
 
     const container = document.getElementById(id);
 
@@ -24,10 +32,6 @@ async function loadComponent(id, file) {
     console.error(error);
   }
 }
-
-/**
- * INIT LAYOUT
- */
 
 async function initLayout() {
   await Promise.all([
