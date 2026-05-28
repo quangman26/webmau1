@@ -1,0 +1,141 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  margin-left: auto;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.navbar-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 36px;
+}
+
+.navbar-menu a {
+  position: relative;
+
+  color: var(--text-heading);
+
+  font-weight: 500;
+
+  transition: color 0.3s ease;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.navbar-menu a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -10px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: var(--primary);
+}
+
+.navbar-menu a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   ACTIVE LINK
+========================= */
+
+.navbar-menu a.active {
+  color: var(--primary);
+}
+
+.navbar-menu a.active::after {
+  width: 100%;
+}
+
+/* =========================
+   MOBILE TOGGLE
+========================= */
+
+.mobile-toggle {
+  display: none;
+
+  position: relative;
+
+  width: 48px;
+
+  height: 48px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  background: var(--white);
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.mobile-toggle span {
+  position: absolute;
+
+  left: 50%;
+
+  width: 22px;
+
+  height: 2px;
+
+  background: var(--text-heading);
+
+  border-radius: 999px;
+
+  transition: 0.3s ease;
+}
+
+.mobile-toggle span:nth-child(1) {
+  transform: translate(-50%, -7px);
+}
+
+.mobile-toggle span:nth-child(2) {
+  transform: translate(-50%, 0);
+}
+
+.mobile-toggle span:nth-child(3) {
+  transform: translate(-50%, 7px);
+}
+
+/* =========================
+   ACTIVE TOGGLE
+========================= */
+
+.mobile-toggle.active span:nth-child(1) {
+  transform: translate(-50%, 0) rotate(45deg);
+}
+
+.mobile-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.active span:nth-child(3) {
+  transform: translate(-50%, 0) rotate(-45deg);
+}

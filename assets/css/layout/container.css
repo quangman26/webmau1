@@ -1,0 +1,11 @@
+.container {
+  width: min(100% - 32px, var(--container-width));
+
+  margin-inline: auto;
+}
+
+.container-fluid {
+  width: min(100% - 32px, 100%);
+
+  margin-inline: auto;
+}

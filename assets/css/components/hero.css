@@ -7,7 +7,7 @@
 
   overflow: hidden;
 
-  padding: 180px 0 140px;
+  padding: 80px 0 160px;
 
   background:
     radial-gradient(
@@ -34,8 +34,12 @@
 
 .hero-content {
   position: relative;
-
+  max-width: 620px;
   z-index: 2;
+}
+
+.hero-image {
+  padding-right: 40px;
 }
 
 /* BADGE */
@@ -64,6 +68,8 @@
   letter-spacing: 0.08em;
 
   margin-bottom: 28px;
+
+  box-shadow: var(--shadow-sm);
 }
 
 /* TITLE */
@@ -73,7 +79,7 @@
 
   color: #0f172a;
 
-  font-size: 64px;
+  font-size: 44px;
 
   font-weight: 700;
 
@@ -81,7 +87,7 @@
 
   letter-spacing: -0.045em;
 
-  margin-bottom: 24px;
+  margin-bottom: 2px;
 }
 
 .hero-title span {
@@ -93,13 +99,13 @@
 .hero-description {
   max-width: 580px;
 
-  color: #475569;
+  margin-bottom: 40px;
 
-  font-size: 18px;
+  font-size: var(--fs-body-lg);
 
   line-height: 1.8;
 
-  margin-bottom: 38px;
+  color: var(--text-body);
 }
 
 /* BUTTONS */

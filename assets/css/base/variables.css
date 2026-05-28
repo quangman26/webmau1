@@ -1,31 +1,87 @@
 :root {
-  /* COLORS */
+  /* ========================================
+     PRIMITIVE COLORS
+  ======================================== */
 
-  --primary: #2b63d9;
-  --primary-dark: #1d4fb8;
-  --primary-light: #eef4ff;
+  --blue-100: #eef4ff;
+  --blue-500: #2b63d9;
+  --blue-700: #1d4fb8;
 
-  --dark: #0f172a;
-  --black: #111111;
-
-  --gray: #64748b;
-  --light-gray: #e2e8f0;
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-400: #94a3b8;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-900: #0f172a;
 
   --white: #ffffff;
+  --black: #111111;
 
-  /* TYPOGRAPHY */
+  --green-600: #16a34a;
+  --yellow-500: #f59e0b;
+  --red-600: #dc2626;
 
-  --fs-h1: 64px;
-  --fs-h2: 48px;
-  --fs-h3: 28px;
+  --sky-500: #0ea5e9;
 
-  --fs-body: 16px;
+  /* ========================================
+     SEMANTIC COLORS
+  ======================================== */
 
-  /* FONT */
+  --primary: var(--blue-500);
+  --primary-dark: var(--blue-700);
+  --primary-light: var(--blue-100);
+
+  --secondary: var(--sky-500);
+
+  --background: var(--slate-50);
+  --surface: var(--white);
+
+  --border: var(--slate-200);
+
+  --text-heading: var(--slate-900);
+  --text-body: var(--slate-700);
+  --text-muted: var(--slate-400);
+
+  --success: var(--green-600);
+  --warning: var(--yellow-500);
+  --error: var(--red-600);
+
+  /* ========================================
+     TYPOGRAPHY
+  ======================================== */
 
   --font-primary: "Be Vietnam Pro", sans-serif;
 
-  /* SPACING */
+  --fs-display: clamp(64px, 8vw, 96px);
+
+  --fs-h1: clamp(38px, 6vw, 72px);
+  --fs-h2: clamp(40px, 5vw, 56px);
+  --fs-h3: clamp(28px, 4vw, 36px);
+  --fs-h4: 24px;
+  --fs-h5: 20px;
+
+  --fs-body-lg: 18px;
+  --fs-body: 16px;
+  --fs-body-sm: 14px;
+
+  --fs-caption: 12px;
+
+  --lh-heading: 1.1;
+  --lh-body: 1.7;
+
+  /* ========================================
+     FONT WEIGHT
+  ======================================== */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ========================================
+     SPACING SYSTEM
+  ======================================== */
 
   --space-1: 8px;
   --space-2: 16px;
@@ -33,30 +89,79 @@
   --space-4: 32px;
   --space-5: 48px;
   --space-6: 64px;
+  --space-7: 80px;
+  --space-8: 120px;
 
-  /* CONTAINER */
+  /* ========================================
+     CONTAINER
+  ======================================== */
 
-  --container-width: 1200px;
+  --container-width: 1320px;
 
-  /* RADIUS */
+  /* ========================================
+     BORDER RADIUS
+  ======================================== */
 
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
 
-  /* SHADOW */
+  /* ========================================
+     SHADOW SYSTEM
+  ======================================== */
 
-  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.05);
 
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.08);
 
-  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.12);
 
-  /* TRANSITION */
+  /* ========================================
+     TRANSITION
+  ======================================== */
 
-  --transition: all 0.3s ease;
+  --transition-fast: 0.2s ease;
+
+  --transition-base: 0.3s ease;
+
+  --transition-slow: 0.5s ease;
+
+  /* ========================================
+     BUTTON SYSTEM
+  ======================================== */
+
+  --btn-height: 48px;
+
+  --btn-padding-x: 26px;
+
+  --btn-radius: 14px;
+
+  --btn-font-size: 15px;
+
+  /* ========================================
+     CARD SYSTEM
+  ======================================== */
+
+  --card-padding: 24px;
+
+  --card-radius: 24px;
+
+  /* ========================================
+     Z-INDEX
+  ======================================== */
 
   --z-preloader: 9999;
   --z-fixed: 1000;
   --z-dropdown: 100;
+
+  /* ========================================
+     BREAKPOINTS
+  ======================================== */
+
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 992px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 576px;
 }

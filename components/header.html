@@ -1,39 +1,82 @@
 <header class="header">
-  <div class="container">
-    <div class="header-wrapper">
+  <!-- TOPBAR -->
+
+  <div class="topbar">
+    <div class="container topbar-wrapper">
+      <div class="topbar-left">
+        <a href="tel:0900000000"> Hotline: 0900 000 000 </a>
+
+        <a href="mailto:info@hantrung.com"> info@hantrung.com </a>
+      </div>
+
+      <div class="topbar-right">
+        <span> Thứ 2 - Thứ 7 | 7:30 - 17:00 </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+
+  <div class="header-main">
+    <div class="container header-wrapper">
       <!-- LOGO -->
-      <a href="/index.html" class="logo">
-        <img src="/assets/images/logo/logo.png" alt="Han Trung Engineering" />
+
+      <a href="/" class="header-logo">
+        <img
+          src="/assets/images/logo/logo.png"
+          decoding="async"
+          alt="Han Trung Engineering"
+        />
       </a>
+      <!-- NAVBAR -->
 
-      <!-- DESKTOP MENU -->
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li><a href="/index.html" class="nav-link active">Trang chủ</a></li>
+      <nav class="navbar" id="mobileNav">
+        <ul class="navbar-menu">
+          <li>
+            <a href="/">Trang chủ</a>
+          </li>
 
-          <li><a href="/pages/about.html" class="nav-link">Giới thiệu</a></li>
+          <li>
+            <a href="/pages/about.html"> Giới thiệu </a>
+          </li>
 
-          <li><a href="/pages/services.html" class="nav-link">Dịch vụ</a></li>
+          <li>
+            <a href="/pages/services.html"> Dịch vụ </a>
+          </li>
 
-          <li><a href="/pages/projects.html" class="nav-link">Dự án</a></li>
+          <li>
+            <a href="/pages/projects.html"> Dự án </a>
+          </li>
 
-          <li><a href="/pages/blog.html" class="nav-link">Tin tức</a></li>
+          <li>
+            <a href="/pages/blog.html"> Tin tức </a>
+          </li>
 
-          <li><a href="/pages/contact.html" class="nav-link">Liên hệ</a></li>
+          <li>
+            <a href="/pages/contact.html"> Liên hệ </a>
+          </li>
         </ul>
       </nav>
 
       <!-- CTA -->
-      <div class="header-actions">
-        <a href="/pages/contact.html" class="btn btn-primary"> Nhận tư vấn </a>
 
-        <!-- MOBILE BUTTON -->
-        <button class="menu-toggle" id="menuToggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <a href="/pages/contact.html" class="btn btn-primary header-cta">
+        Nhận báo giá
+      </a>
+
+      <!-- MOBILE TOGGLE -->
+
+      <button
+        class="mobile-toggle"
+        id="menuToggle"
+        aria-label="Mở menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </div>
 </header>

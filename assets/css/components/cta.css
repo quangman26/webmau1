@@ -1,0 +1,37 @@
+.cta-section {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 100px 0;
+
+  border-radius: var(--radius-lg);
+
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+
+  color: var(--white);
+}
+
+.cta-content {
+  max-width: 720px;
+
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+.cta-title {
+  margin-bottom: 24px;
+
+  font-size: clamp(36px, 5vw, 56px);
+
+  line-height: 1.1;
+}
+
+.cta-text {
+  margin-bottom: 40px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: var(--fs-body-lg);
+}
