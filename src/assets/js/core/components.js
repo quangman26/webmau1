@@ -6,6 +6,14 @@ import { initMenu } from "./menu.js";
  */
 const componentCache = new Map();
 
+/**
+ * COMPONENT PATH
+ */
+const COMPONENT_PATH = {
+  header: "/src/components/header.html",
+  footer: "/src/components/footer.html",
+};
+
 async function loadComponent(id, file) {
   try {
     let html;
@@ -25,7 +33,10 @@ async function loadComponent(id, file) {
 
     const container = document.getElementById(id);
 
-    if (!container) return;
+    if (!container) {
+      console.warn(`Container #${id} not found`);
+      return;
+    }
 
     container.innerHTML = html;
   } catch (error) {
@@ -35,17 +46,11 @@ async function loadComponent(id, file) {
 
 async function initLayout() {
   await Promise.all([
-    loadComponent("header", "/src/components/header.html"),
-
-    loadComponent("footer", "/src/components/footer.html"),
+    loadComponent("header", COMPONENT_PATH.header),
+    loadComponent("footer", COMPONENT_PATH.footer),
   ]);
 
-  /**
-   * INIT AFTER DOM READY
-   */
-
   initNavbar();
-
   initMenu();
 }
 

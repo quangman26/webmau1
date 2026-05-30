@@ -141,7 +141,7 @@ export function initMenu() {
     clearTimeout(resizeTimer);
 
     resizeTimer = setTimeout(() => {
-      if (window.innerWidth > DESKTOP_BREAKPOINT) {
+      if (window.innerWidth >= DESKTOP_BREAKPOINT) {
         closeMenu();
       }
     }, 150);
@@ -181,8 +181,7 @@ export function initMenu() {
    * =========================================================
    */
 
-  document.addEventListener("click", handleClickOutside);
-
+  document.addEventListener("click", handleClickOutside, { passive: true });
   /**
    * =========================================================
    * RESET MENU WHEN RESIZE DESKTOP

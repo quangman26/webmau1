@@ -58,12 +58,21 @@
   width: 100%;
 }
 
+.navbar-menu a:focus-visible {
+  color: var(--primary);
+}
+
+.navbar-menu a:focus-visible::after {
+  width: 100%;
+}
+
 /* =========================
    ACTIVE LINK
 ========================= */
 
 .navbar-menu a.active {
   color: var(--primary);
+  font-weight: 600;
 }
 
 .navbar-menu a.active::after {
@@ -109,7 +118,9 @@
 
   border-radius: 999px;
 
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .mobile-toggle span:nth-child(1) {
@@ -122,6 +133,11 @@
 
 .mobile-toggle span:nth-child(3) {
   transform: translate(-50%, 7px);
+}
+
+.mobile-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
 }
 
 /* =========================

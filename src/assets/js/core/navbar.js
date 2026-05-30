@@ -6,19 +6,19 @@ export function initNavbar() {
   let ticking = false;
 
   function updateNavbar() {
-    if (window.scrollY > 40) {
-      header.classList.add("is-scrolled");
-    } else {
-      header.classList.remove("is-scrolled");
-    }
+    header.classList.toggle("is-scrolled", window.scrollY > 40);
 
     ticking = false;
   }
 
-  window.addEventListener("scroll", () => {
+  function handleScroll() {
     if (!ticking) {
       window.requestAnimationFrame(updateNavbar);
       ticking = true;
     }
-  });
+  }
+
+  updateNavbar();
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
 }

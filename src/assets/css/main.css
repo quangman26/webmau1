@@ -54,6 +54,14 @@
 @import url("./pages/contact.css");
 
 /* =========================================================
+   HOME
+========================================================= */
+
+@import url("./pages/home/about-preview.css");
+@import url("./pages/home/services-preview.css");
+@import url("./pages/home/projects-preview.css");
+
+/* =========================================================
    UTILITIES
 ========================================================= */
 

@@ -11,7 +11,7 @@
 }
 
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: var(--space-6);
 }
 
 .section-title {
@@ -21,11 +21,11 @@
 .section-title span {
   display: inline-flex;
 
-  margin-bottom: 16px;
+  margin-bottom: var(--space-2);
 
   color: var(--primary);
 
-  font-weight: 600;
+  font-weight: var(--fw-semibold);
 
   letter-spacing: 0.08em;
 
@@ -33,7 +33,7 @@
 }
 
 .section-title h2 {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-3);
 
   color: var(--text-heading);
 }

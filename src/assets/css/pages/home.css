@@ -1,0 +1,43 @@
+.section {
+  padding-block: 100px;
+}
+
+.section-sm {
+  padding-block: 80px;
+}
+
+.section-lg {
+  padding-block: 140px;
+}
+
+.section-header {
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  max-width: 700px;
+}
+
+.section-title span {
+  display: inline-flex;
+
+  margin-bottom: var(--space-2);
+
+  color: var(--primary);
+
+  font-weight: var(--fw-semibold);
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+}
+
+.section-title h2 {
+  margin-bottom: var(--space-3);
+
+  color: var(--text-heading);
+}
+
+.section-title p {
+  color: var(--text-body);
+}

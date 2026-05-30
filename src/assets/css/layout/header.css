@@ -40,7 +40,7 @@
 
   justify-content: space-between;
 
-  min-height: 42px;
+  /* min-height: 42px; */
 
   gap: 24px;
 }

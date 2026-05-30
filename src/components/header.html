@@ -21,11 +21,12 @@
     <div class="container header-wrapper">
       <!-- LOGO -->
 
-      <a href="/" class="header-logo">
+      <a href="/index.html" class="header-logo">
         <img
-          src="/assets/images/logo/logo.png"
-          decoding="async"
+          src="/src/assets/images/logo/logo.png"
           alt="Han Trung Engineering"
+          decoding="async"
+          loading="eager"
         />
       </a>
       <!-- NAVBAR -->
@@ -33,27 +34,27 @@
       <nav class="navbar" id="mobileNav" aria-label="Main navigation">
         <ul class="navbar-menu">
           <li>
-            <a href="/" aria-current="page">Trang chủ</a>
+            <a href="/index.html">Trang chủ</a>
           </li>
 
           <li>
-            <a href="/pages/about.html" aria-current="page"> Giới thiệu </a>
+            <a href="/pages/about.html"> Giới thiệu </a>
           </li>
 
           <li>
-            <a href="/pages/services.html" aria-current="page"> Dịch vụ </a>
+            <a href="/pages/services.html"> Dịch vụ </a>
           </li>
 
           <li>
-            <a href="/pages/projects.html" aria-current="page"> Dự án </a>
+            <a href="/pages/projects.html"> Dự án </a>
           </li>
 
           <li>
-            <a href="/pages/blog.html" aria-current="page"> Tin tức </a>
+            <a href="/pages/blog.html"> Tin tức </a>
           </li>
 
           <li>
-            <a href="/pages/contact.html" aria-current="page"> Liên hệ </a>
+            <a href="/pages/contact.html"> Liên hệ </a>
           </li>
         </ul>
       </nav>
@@ -67,6 +68,7 @@
       <!-- MOBILE TOGGLE -->
 
       <button
+        type="button"
         class="mobile-toggle"
         id="menuToggle"
         aria-label="Mở menu"
